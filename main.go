@@ -1,13 +1,16 @@
 package main
 
 import (
+	"fmt"
+	"google.golang.org/grpc"
 	"log"
 	"net"
-	"google.golang.org/grpc"
 	"server/chat"
 )
 
 func main() {
+
+	fmt.Println("Go gRPC Beginners Tutorial!")
 
 	lis, err := net.Listen("tcp", ":9000")
 	if err != nil {
